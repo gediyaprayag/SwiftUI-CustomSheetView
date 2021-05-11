@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04521A6D2647987800233568 /* ModalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04521A6C2647987800233568 /* ModalExtensions.swift */; };
 		04A651FD26478E3500DB73C0 /* ModalDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A651FC26478E3500DB73C0 /* ModalDemoApp.swift */; };
 		04A651FF26478E3500DB73C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A651FE26478E3500DB73C0 /* ContentView.swift */; };
 		04A6520126478E3700DB73C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A6520026478E3700DB73C0 /* Assets.xcassets */; };
 		04A6520426478E3700DB73C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A6520326478E3700DB73C0 /* Preview Assets.xcassets */; };
+		04A6521626478EB300DB73C0 /* ModalHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6521226478EB300DB73C0 /* ModalHelperView.swift */; };
+		04A6521B26478F7100DB73C0 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6521A26478F7100DB73C0 /* ModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04521A6C2647987800233568 /* ModalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalExtensions.swift; sourceTree = "<group>"; };
 		04A651F926478E3500DB73C0 /* ModalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A651FC26478E3500DB73C0 /* ModalDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDemoApp.swift; sourceTree = "<group>"; };
 		04A651FE26478E3500DB73C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04A6520026478E3700DB73C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A6520326478E3700DB73C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04A6520526478E3700DB73C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A6521226478EB300DB73C0 /* ModalHelperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalHelperView.swift; sourceTree = "<group>"; };
+		04A6521A26478F7100DB73C0 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,9 @@
 		04A651FB26478E3500DB73C0 /* ModalDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04A6521026478E8D00DB73C0 /* HalfModal */,
 				04A651FC26478E3500DB73C0 /* ModalDemoApp.swift */,
+				04A6521A26478F7100DB73C0 /* ModalView.swift */,
 				04A651FE26478E3500DB73C0 /* ContentView.swift */,
 				04A6520026478E3700DB73C0 /* Assets.xcassets */,
 				04A6520526478E3700DB73C0 /* Info.plist */,
@@ -67,6 +75,15 @@
 				04A6520326478E3700DB73C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04A6521026478E8D00DB73C0 /* HalfModal */ = {
+			isa = PBXGroup;
+			children = (
+				04A6521226478EB300DB73C0 /* ModalHelperView.swift */,
+				04521A6C2647987800233568 /* ModalExtensions.swift */,
+			);
+			path = HalfModal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +102,8 @@
 			dependencies = (
 			);
 			name = ModalDemo;
+			packageProductDependencies = (
+			);
 			productName = ModalDemo;
 			productReference = 04A651F926478E3500DB73C0 /* ModalDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +131,8 @@
 				Base,
 			);
 			mainGroup = 04A651F026478E3500DB73C0;
+			packageReferences = (
+			);
 			productRefGroup = 04A651FA26478E3500DB73C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A651FF26478E3500DB73C0 /* ContentView.swift in Sources */,
+				04A6521626478EB300DB73C0 /* ModalHelperView.swift in Sources */,
 				04A651FD26478E3500DB73C0 /* ModalDemoApp.swift in Sources */,
+				04521A6D2647987800233568 /* ModalExtensions.swift in Sources */,
+				04A6521B26478F7100DB73C0 /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

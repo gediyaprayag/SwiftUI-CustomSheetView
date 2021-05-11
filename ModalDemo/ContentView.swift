@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var presentModal: Bool = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            Color.pink
+            Button(action: {
+                presentModal.toggle()
+            }, label: {
+                Text("Present Modal")
+                    .fontWeight(.bold)
+                    .font(.title)
+            })
+        }.modal(present: $presentModal, view: ModalView())
     }
 }
 
